@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Stylesheet2</title>
+        <style>
+            body{
+                font-family: Arial;
+                background-color: #d14836;
+                margin:8px;
+            }
+            header{
+                padding:15px;
+            }
+            h1{
+                color: white;
+                font-weight:bold;
+                line-height: 50px;
+                font-size:60px;
+                margin: 0;
+            }
+            p{
+                color: white;
+                font-size:30px;
+                margin: 25px 0 25px;
+            }
+            main{
+                display: flex;
+                padding: 10px;
+                background-color: #ffffff;
+                font: 80% Verdana;
+                padding-bottom:25px;
+            }
+            a{
+                text-decoration: none;
+                color: #d14836;
+                cursor: pointer;
+            }
+            .title{
+                padding-top:20px;
+                padding-bottom:20px;
+                font: 80% Verdana;
+                color: #d14836;
+                font-weight: 700;
+                font-size: 25px;
+            }
+            .content{
+                color:black;
+            }
+            .nostyle{
+                color: #d14836;
+                font-weight: 700;
+                font-size: 20px;
+                padding-top:20px;
+                padding-bottom:20px;
+            }
+            sidebar{
+                display: block;
+                background-color: #F6DAD7;
+                color: #d14836;
+                font:Verdana;
+                padding: 10px;
+            }
+            .title2{
+                padding:20px 0 20px;
+                font-size: 18px;
+                font-weight:900;
+            }
+            .sidecontent{
+                padding-bottom: 20px;
+            }
+            footer{
+                text-align: center;
+                padding: 10px;
+                font-size: 70%;
+                color: #ffffff;
+                line-height: 20px;
+            }
+            wrapper{
+                display: block;
+            }
+            ul{
+                width:190px;
+                font: 16px verdana;
+                font-weight: 600;
+                margin:0;
+                padding:0;
+            }
+            .btn{
+                width: 155px;
+    background-color: #d14836;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 8px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+            }
+            .btn:hover{
+                background-color: white;
+                color:#d14836;
+            }
+            .active{
+                width: 155px;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+            }
+
+            .link:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </header>
+
+    <main>
+        <wrapper>
+        <div class="title">Same Page Different Stylesheets</div>
+        <div class="content">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</div>
+       
+        <a href="file:///Users/kim-yoonchae/Desktop/oss/week1/style1.html" class="link">Stylesheet1</a>,        
+        <a href="file:///Users/kim-yoonchae/Desktop/oss/week1/style2.html" class="link">Stylesheet2</a>,
+        <a class="link">Stylesheet3</a>
+        <a class="link">Stylesheet4</a>.
+        
+        <div class="nostyle">No Styles</div>
+        <div class="content">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</div>
+        <a href="file:///Users/kim-yoonchae/Desktop/oss/week1/index.html">No Stylesheet</a>.
+        </wrapper>
+         <ul>
+                    <a href="file:///Users/kim-yoonchae/Desktop/oss/week1/style1.html" style="text-decoration: none;"><li class="btn">Stylesheet 1</li></a>
+                    <a href="file:///Users/kim-yoonchae/Desktop/oss/week1/style2.html" style="text-decoration: none;"><li class="active">Stylesheet 2</li></a>
+                    
+                    <li class="btn">Stylesheet 3</li>
+                    <li class="btn">Stylesheet 4</li>
+                    <a href="file:///Users/kim-yoonchae/Desktop/oss/week1/index.html" style="text-decoration: none;"><li class="btn">No Stylesheet</li></a>
+            </ul>  
+    
+    
+    </main>
+     <sidebar>
+        <div class="title2">Side-Bar</div>
+        <div class="sidecontent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+    </sidebar>
+    <footer>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</footer>
+
+        
+    </body>
+</html>
