@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .wrapper {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+    .addbtn {
+      background-color: blue;
+      color: white;
+      padding: 2px 8px;
+      cursor: pointer;
+    }
+    .deletebtn {
+      background-color: green;
+      color: white;
+      padding: 2px 8px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function add() {
+      const input = document.getElementById("add");
+      const list = document.getElementById("list");
+      const text = input.value.trim();
+
+      const li = document.createElement("li");
+      li.textContent = text;
+      list.appendChild(li);
+
+      input.value = ""; 
+      input.focus();
+    }
+     window.onload = function () {
+      const delBtn = document.querySelector(".deletebtn");
+      const list = document.getElementById("list");
+
+      delBtn.onclick = function () {
+        list.innerHTML = "";
+      };
+    };
+  </script>
+</head>
+<body>
+  <h1>Dynamic Web page</h1>
+  <div class="wrapper">
+    <input type="text" id="add" name="add">
+    <div id="addBtn" class="addbtn" onclick='add()'>추가</div>
+    <div class="deletebtn">삭제</div>
+  </div>
+  <ul id="list"></ul>
+</body>
+</html>
